@@ -60,10 +60,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
         android:maxLines="4"
         android:text="Abstract"
-        android:textStyle="italic"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mediaImage"
         app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
