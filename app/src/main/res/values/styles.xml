@@ -1,0 +1,6 @@
+<resources>
+    <style name="RoundedImageView" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust this value to control how round the corners are -->
+    </style>
+</resources>

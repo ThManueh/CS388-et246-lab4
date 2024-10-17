@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp">
 
-    <ImageView
+
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/mediaImage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:layout_constraintDimensionRatio="16:9"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:shapeAppearanceOverlay="@style/RoundedImageView"-->
+
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+<!--    -->
+<!--    -->
+<!--    -->
+
+
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/mediaImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerInside"
+        android:layout_width="145dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent=".35" />
+        app:layout_constraintWidth_percent=".35"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
     <TextView
         android:id="@+id/mediaTitle"
@@ -25,6 +46,8 @@
         android:maxLines="2"
         android:text="Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/mediaImage"
         app:layout_constraintTop_toTopOf="@+id/mediaImage" />
@@ -39,6 +62,7 @@
         android:ellipsize="end"
         android:maxLines="4"
         android:text="Abstract"
+        android:textStyle="italic"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mediaImage"
